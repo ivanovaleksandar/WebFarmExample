@@ -34,7 +34,7 @@ namespace WebFarmExample
 
             services.AddDistributedRedisCache(options =>
             {
-                options.Configuration = Dns.GetHostAddressesAsync("dockerconfig_ali_redis_1").Result.FirstOrDefault().ToString();
+                options.Configuration = Dns.GetHostAddressesAsync("redis-master").Result.FirstOrDefault().ToString();
                 options.InstanceName = "redisInstance";
             });
         }
