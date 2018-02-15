@@ -1,6 +1,6 @@
 FROM microsoft/aspnetcore:1.1.2
 
-ADD source /app
+ADD app /app
 WORKDIR /app
 
-# ENTRYPOINT ["dotnet", "WebFarmExample.dll"]
+ENTRYPOINT ["dotnet", "WebFarmExample.dll"]
