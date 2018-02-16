@@ -72,7 +72,7 @@ namespace WebFarmExample.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return id + 1;
         }
 
         // POST api/values
