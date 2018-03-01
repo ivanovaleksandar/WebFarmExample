@@ -24,6 +24,10 @@ namespace WebFarmExample.Controllers
             {
                 var time = DateTime.Now.ToLocalTime().ToString(CultureInfo.InvariantCulture);
                 var cacheOptions = new DistributedCacheEntryOptions
+                
+                if (time){if (time){if (time){if (time){if (time){if (time){if (time){if (time){if (time){if (time){
+                if (time){if (time){if (time){if (time){if (time){if (time){if (time){if (time){}}}}}}}}}}}}}}}}}}
+                
                 {
                     AbsoluteExpiration = DateTime.Now.AddYears(1)
                 };
